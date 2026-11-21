@@ -1,6 +1,6 @@
 # Share a deck
 
-Anyone can suggest a deck for the gallery. The maintainer reviews every deck before it appears in LernLab, so nothing goes live without a check.
+Anyone can suggest a deck for the gallery. A reviewer or maintainer reviews every deck before it appears in LernLab, so nothing goes live without a check.
 
 ## What a deck needs
 
@@ -11,7 +11,7 @@ Anyone can suggest a deck for the gallery. The maintainer reviews every deck bef
 
 ## Two ways to send it
 
-**1. The form (no GitHub skills needed).** Fill in the [deck submission form](https://github.com/n1m5l5ss/lernlab/issues/new?template=deck_submission.yml) and attach your `.lernpack`. The maintainer adds it for you.
+**1. The form (no GitHub skills needed).** Fill in the [deck submission form](https://github.com/n1m5l5ss/lernlab/issues/new?template=deck_submission.yml) and attach your `.lernpack`. A maintainer adds it for you.
 
 **2. A pull request.**
 
@@ -27,4 +27,8 @@ Anyone can suggest a deck for the gallery. The maintainer reviews every deck bef
 
 ## What happens next
 
-The maintainer imports your deck into LernLab, checks the cards and the licence, and merges the pull request (or adds the deck from the form). Everyone who opens the gallery sees it from then on. To fix a deck later, send a new file with the same `id`. People who installed it get the fixes when they install it again, and they keep their progress.
+A bot posts a short summary of your deck on the pull request. A reviewer or maintainer imports your deck into LernLab, checks the cards and the licence, and merges the pull request (or adds the deck from the form). Everyone who opens the gallery sees it from then on. To fix a deck later, send a new file with the same `id`. People who installed it get the fixes when they install it again, and they keep their progress.
+
+## Become a reviewer
+
+Like checking decks? Use the [Join the team form](https://github.com/n1m5l5ss/lernlab/issues/new?template=join_team.yml). See [GOVERNANCE.md](GOVERNANCE.md).

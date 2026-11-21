@@ -1,8 +1,8 @@
-"""Checks index.json and every deck in it. Run: python3 scripts/check.py"""
+"""Checks index.json and every deck in it. Run: python3 scripts/check.py [folder]"""
 import hashlib, json, re, sys, zipfile
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else Path(__file__).resolve().parent.parent
 LICENCES = {"CC-BY-4.0", "CC-BY-SA-4.0", "CC0-1.0"}
 MAX_SIZE = 200 * 1024 * 1024
 errors = []
@@ -34,7 +34,7 @@ for n, d in enumerate(index.get("decks", [])):
         continue
     path = ROOT / url
     listed.add(path.name)
-    if not path.is_file():
+    if path.is_symlink() or not path.is_file():
         fail(f"{where}: {url} does not exist")
         continue
     data = path.read_bytes()
@@ -54,6 +54,9 @@ for n, d in enumerate(index.get("decks", [])):
             if not manifest:
                 fail(f"{where}: no manifest.json in the package")
                 continue
+            if z.getinfo(manifest).file_size > 1_000_000:
+                fail(f"{where}: manifest.json is too big")
+                continue
             m = json.loads(z.read(manifest))
             if m.get("format") != "lernpack" or m.get("version") != 1:
                 fail(f"{where}: not a .lernpack version 1")
@@ -62,7 +65,7 @@ for n, d in enumerate(index.get("decks", [])):
     except zipfile.BadZipFile:
         fail(f"{where}: not a zip file")
 
-for f in (ROOT / "decks").glob("*"):
+for f in (ROOT / "decks").glob("*") if (ROOT / "decks").is_dir() else []:
     if f.name not in listed:
         fail(f"decks/{f.name} is not listed in index.json")
 

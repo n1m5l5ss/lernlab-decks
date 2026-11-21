@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Share a deck (no GitHub skills needed)
+    url: https://github.com/n1m5l5ss/lernlab/issues/new?template=deck_submission.yml
+    about: Fill in a short form and attach your .lernpack.
+  - name: Join the team
+    url: https://github.com/n1m5l5ss/lernlab/issues/new?template=join_team.yml
+    about: Become a reviewer, a maintainer or the lead.
