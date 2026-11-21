@@ -1,0 +1,80 @@
+{
+  "format": "lernlab-gallery",
+  "version": 1,
+  "updated": "2026-11-21",
+  "decks": [
+    {
+      "id": "spanish-first-conversations",
+      "title": "Spanish: first conversations",
+      "description": "Everyday Spanish for your first conversations: greetings, polite phrases, common nouns with el and la, and eight key verbs.",
+      "language": "es",
+      "cards": 41,
+      "licence": "CC0-1.0",
+      "author": "LernLab",
+      "url": "decks/spanish-first-conversations.lernpack",
+      "sha256": "9d3268d874270c204100371b5aa440a125e99d664159404bdeb43ef6c80a1bd9",
+      "size": 3319,
+      "tags": [
+        "beginner",
+        "spanish",
+        "phrases",
+        "verbs"
+      ]
+    },
+    {
+      "id": "german-colours-with-pictures",
+      "title": "German: colours (with pictures)",
+      "description": "Colour words and two verbs, with pictures and animated GIFs.",
+      "language": "de",
+      "cards": 10,
+      "licence": "CC0-1.0",
+      "author": "LernLab",
+      "url": "decks/german-colours-with-pictures.lernpack",
+      "sha256": "a57e6fa323fecb60b24c9d7e15f829d2bf306d370fa68fe77ce0fbfb9a466ea4",
+      "size": 24353,
+      "tags": [
+        "beginner",
+        "german",
+        "colours",
+        "pictures"
+      ]
+    },
+    {
+      "id": "networking-essentials",
+      "title": "Networking essentials",
+      "description": "Ports, protocols, OSI layers and IP addressing: the core of entry-level networking certifications such as CompTIA Network+.",
+      "language": null,
+      "cards": 38,
+      "licence": "CC0-1.0",
+      "author": "LernLab",
+      "url": "decks/networking-essentials.lernpack",
+      "sha256": "f2bef74697f0e07317bbb92ac875e44251a0dd5d8b57ec37fbde77f11cb30224",
+      "size": 3263,
+      "tags": [
+        "networking",
+        "comptia",
+        "network+",
+        "certification",
+        "it"
+      ]
+    },
+    {
+      "id": "chemistry-first-20-elements",
+      "title": "Chemistry: the first 20 elements",
+      "description": "Names and symbols of elements 1 to 20, sorted into metals, nonmetals and metalloids, plus the basic ideas of atoms and bonds.",
+      "language": null,
+      "cards": 36,
+      "licence": "CC0-1.0",
+      "author": "LernLab",
+      "url": "decks/chemistry-first-20-elements.lernpack",
+      "sha256": "7f16c33bffb3a70553c1b0ef14e833cabccc6e114f74539f71b3eb47f93151f7",
+      "size": 2426,
+      "tags": [
+        "chemistry",
+        "science",
+        "elements",
+        "school"
+      ]
+    }
+  ]
+}
