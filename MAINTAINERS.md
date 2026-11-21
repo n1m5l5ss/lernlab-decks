@@ -4,11 +4,11 @@ How these roles work and how to join: [GOVERNANCE.md](https://github.com/n1m5l5s
 
 ## Lead
 
-- @n1m5l5ss (John), founder
+- @n1m5l5ss (kandru), founder
 
 ## Maintainers
 
-- @n1m5l5ss (John)
+- @n1m5l5ss (kandru)
 
 ## Reviewers
 

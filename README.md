@@ -15,4 +15,6 @@ Decks are reviewed by volunteers. Anyone can join as a reviewer, and anyone can 
 
 ## Licences
 
-Each deck's licence is in `index.json`. The starter decks made by LernLab are CC0 (public domain).
+Originally created by kandru (aka [@n1m5l5ss](https://github.com/n1m5l5ss)); see [AUTHORS.md](AUTHORS.md).
+
+Each deck's licence is in `index.json`. The scripts, workflows and docs are MIT ([LICENSE](LICENSE)). The starter decks made by LernLab are CC0 (public domain).
